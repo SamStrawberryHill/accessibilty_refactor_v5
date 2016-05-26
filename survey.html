@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="main.js"></script>
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <link href="css/survey.css" rel="stylesheet" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
@@ -17,10 +19,10 @@
         <li><a href="#">Survey</a></li>
       </ul>
     </div>
-
     <header>
+      <h1>Accessible Frog</h1>
+      <p>we make awesome music</p>
     </header>
-
     <main>
       <h2>Survey</h2>
       <div class="card">
@@ -28,13 +30,16 @@
           <img class="photo" src= "img/concert01.jpg" alt="">
           <div class="container">
             <form class = "survey">
-              <p>Who is your favorite band member:</p>
-              <input type="radio" name="res" value="John"> John
-              <input type="radio" name="res" value="Hazzard"> Hazzard
-              <input type="radio" name="res" value="Bob"> Bob
-              <input type="radio" name="res" value="Sally"> Sally
-
-              <p>What is your favorite album:</p>
+              <fieldset>
+                <legend>Who is your favorite band member:</legend>
+                <input type="radio" name="res" value="John"><label for="John">John</label>
+                <input type="radio" name="res" value="Hazzard"><label for="Hazzard">Hazzard</label>
+                <input type="radio" name="res" value="Bob"><label for="Bob">Bob</label>
+                <input type="radio" name="res" value="Sally"><label for="Sally">Sally</label>
+              </fieldset>
+              <fieldset>
+              <legend>What is your favorite album:</legend>
+              <label for="albums"></label>
               <select id="albums" name="select">
                 <option value="1">Party For An Angel</option>
                 <option value="2">A Day Of Old</option>
@@ -48,9 +53,11 @@
                 <option value="10">Midnight Fires</option>
                 <option value="11">Street Of The Rider</option>
               </select>
-
-              <p>What is your favorite song:</p>
+            </fieldset>
+              <fieldset>
+              <legend>What is your favorite song:</legend>
               <textarea></textarea>
+              </fieldset>
             </form>
           </div>
         </div>
@@ -73,9 +80,9 @@
 
     <footer>
       <ul>
-        <li><a href="#" class="social twitter"><img src= "img/twitter-32.png"></a></li>
-        <li><a href="#" class="social youtube"><img src= "img/youtube-32.png"></a></li>
-        <li><a href="#" class="social spotify"><img src= "img/spotify-32.png"></a></li>
+        <li><a href="#" class="social twitter"><img src= "img/twitter-32.png" alt="Twitter Icon Link"></a></li>
+        <li><a href="#" class="social youtube"><img src= "img/youtube-32.png" alt="Youtube Icon Link"></a></li>
+        <li><a href="#" class="social spotify"><img src= "img/spotify-32.png" alt="Spotify Icon Link"></a></li>
       </ul>
       <p class="copyright">Copyright 2015, Accessible Frog</p>
     </footer>

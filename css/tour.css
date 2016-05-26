@@ -14,3 +14,19 @@ pre {
   height: 0%;
   padding: 10px;
 }
+caption  {
+  font-size: 3em;
+  text-align: center;
+}
+table {
+  width: 100%;
+  text-align: center;
+}
+th {
+  font-weight: bolder;
+  color: yellow;
+}
+
+th, td {
+  padding: 1em 1em;
+}

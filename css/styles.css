@@ -20,7 +20,8 @@ a {
 }
 
 a:hover {
-  color: #999;
+  /*color: #999;*/
+  fill: red;
 }
 
 /* Section Styles */
@@ -60,7 +61,7 @@ a:hover {
 }
 
 .nav a:hover {
-  color: white;
+  color: yellow;
 }
 
 header {
@@ -89,6 +90,7 @@ header p {
   font-weight: 300;
 }
 
+
 header .name{
   font-size: 3em;
 }
@@ -103,7 +105,7 @@ header .name{
   margin: 30px;
   padding: 20px 40px 40px;
   text-align: left;
-  border-top: 4px solid #781125;
+  border-top: 4px solid yellow;
   clear: both;
 }
 .card:hover {
