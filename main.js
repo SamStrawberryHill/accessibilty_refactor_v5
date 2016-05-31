@@ -1,5 +1,4 @@
-function sortlist()
-{
+function sortlist() {
     var albums = document.getElementById('albums');
     var albumTexts = new Array();
 

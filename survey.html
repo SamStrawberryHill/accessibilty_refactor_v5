@@ -12,35 +12,35 @@
   </head>
 
   <body>
-    <div class="main-nav">
+    <div class="main-nav" role="navigation">
       <ul class="nav">
         <li class="name"><a href="index.html">Accessible Frog</a></li>
         <li><a href="tour.html">Tour</a></li>
         <li><a href="#">Survey</a></li>
       </ul>
     </div>
-    <header>
+    <header role="banner">
       <h1>Accessible Frog</h1>
       <p>we make awesome music</p>
     </header>
-    <main>
+    <main role="main">
       <h2>Survey</h2>
       <div class="card">
         <div class="flex">
           <img class="photo" src= "img/concert01.jpg" alt="">
           <div class="container">
-            <form class = "survey">
+            <form class = "survey" role="form">
               <fieldset>
                 <legend>Who is your favorite band member:</legend>
-                <input type="radio" name="res" value="John"><label for="John">John</label>
-                <input type="radio" name="res" value="Hazzard"><label for="Hazzard">Hazzard</label>
-                <input type="radio" name="res" value="Bob"><label for="Bob">Bob</label>
-                <input type="radio" name="res" value="Sally"><label for="Sally">Sally</label>
+                <label for="John"><input type="radio" name="res" value="John" id="John">John</label>
+                <label for="Hazzard"><input type="radio" name="res" value="Hazzard" id="Hazzard">Hazzard</label>
+                <label for="Bob"><input type="radio" name="res" value="Bob" id="Bob">Bob</label>
+                <label for="Sally"><input type="radio" name="res" value="Sally" id="Sally">Sally</label>
               </fieldset>
               <fieldset>
               <legend>What is your favorite album:</legend>
-              <label for="albums"></label>
               <select id="albums" name="select">
+                <label for="albums"><span styele="display:none">select an albums</span></label>
                 <option value="1">Party For An Angel</option>
                 <option value="2">A Day Of Old</option>
                 <option value="3">Finding My Shadow</option>
@@ -56,7 +56,8 @@
             </fieldset>
               <fieldset>
               <legend>What is your favorite song:</legend>
-              <textarea></textarea>
+              <label for="textarea"><span style="display:none">Please type your favorite song</span></label>
+              <textarea id="textarea"></textarea>
               </fieldset>
             </form>
           </div>
@@ -67,22 +68,28 @@
         <div class="flex">
           <img class="photo" src= "img/the_band.jpg" alt="">
             <div class="container">
-              <form class="newsletter">
-                  <p>Name: <input type ="text" name="textfield"></p>
-                  <p>Email: <input type ="email" name="textfield"></p>
-                  <p>Retype Email: <input type ="email" name="textfield"></p>
-                  <button type="submit">Sign Up</button>
+              <form class="newsletter" role="form">
+                <fieldset>
+                  <legend><span style="display:none">Sign up for the newsletter</span></legend>
+                  <label for="name">Name:<input type ="text" name="textfield">
+                    <span id="hint" style="display:none">Please type your first and last name</span></label>
+                  <label for="email">Email:<input type ="email" name="textfield">
+                    <span id="email" style="display:none">Please type in a valid email address</span></label>
+                  <label for="retypeemail">Retype Email:<input type ="email" name="textfield">
+                    <span id="confirmemail" style="display:none">Please retype your valid email address</span></label>
+                  <button type="submit">Sign Up</button><span id="submit" style="display:none">Button submits form</span>
+                </fieldset>
               </form>
             </div>
         </div>
       </div>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
       <ul>
-        <li><a href="#" class="social twitter"><img src= "img/twitter-32.png" alt="Twitter Icon Link"></a></li>
-        <li><a href="#" class="social youtube"><img src= "img/youtube-32.png" alt="Youtube Icon Link"></a></li>
-        <li><a href="#" class="social spotify"><img src= "img/spotify-32.png" alt="Spotify Icon Link"></a></li>
+        <li><a href="img/img/twitter-32.png" class="social twitter"><img src= "img/twitter-32.png" alt="Twitter Icon Link"></a></li>
+        <li><a href="img/img/youtube-32.png" class="social youtube"><img src= "img/youtube-32.png" alt="Youtube Icon Link"></a></li>
+        <li><a href="img/spotify-32.png" class="social spotify"><img src= "img/spotify-32.png" alt="Spotify Icon Link"></a></li>
       </ul>
       <p class="copyright">Copyright 2015, Accessible Frog</p>
     </footer>
