@@ -77,7 +77,7 @@ header {
 header p {
   padding-top: 5em;
   font-size: 2em;
-  color: #781125;
+  color: black;
 }
 
 .tag {
@@ -128,7 +128,7 @@ header .name{
 }
 h1{
   font-size: 6em;
-  color: #2d2b30;
+  color: black;
   position: absolute;
   width: 100%;
   z-index: 1;
