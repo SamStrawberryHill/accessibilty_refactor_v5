@@ -71,12 +71,18 @@
               <form class="newsletter" role="form">
                 <fieldset>
                   <legend><span style="display:none">Sign up for the newsletter</span></legend>
-                  <label for="name">Name:<input type ="text" name="textfield">
-                    <span id="hint" style="display:none">Please type your first and last name</span></label>
-                  <label for="email">Email:<input type ="email" name="textfield">
-                    <span id="email" style="display:none">Please type in a valid email address</span></label>
-                  <label for="retypeemail">Retype Email:<input type ="email" name="textfield">
-                    <span id="confirmemail" style="display:none">Please retype your valid email address</span></label>
+                  <div class="formgroup">
+                    <label for="name">Name:<input id="name" type ="text" name="textfield">
+                      <span id="hint" style="display:none">Please type your first and last name</span></label>
+                  </div>
+                  <div class="formgroup">
+                    <label for="emailaddy">Email:<input id="emailaddy" type ="email" name="textfield">
+                      <span id="email" style="display:none">Please type in a valid email address</span></label>
+                  </div>
+                  <div class="formgroup">
+                    <label for="retypeemail">Retype Email:<input id="retypeemail" type ="email" name="textfield">
+                      <span id="confirmemail" style="display:none">Please retype your valid email address</span></label>
+                  </div>
                   <button type="submit">Sign Up</button><span id="submit" style="display:none">Button submits form</span>
                 </fieldset>
               </form>

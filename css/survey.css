@@ -12,7 +12,7 @@ form {
 }
 input[type=text],
 input[type=email],
- textarea {
+textarea {
   -webkit-transition: all 0.30s ease-in-out;
   -moz-transition: all 0.30s ease-in-out;
   -ms-transition: all 0.30s ease-in-out;
@@ -21,7 +21,7 @@ input[type=email],
   padding: 3px 0px 3px 3px;
   margin: 5px 1px 3px 3px;
   border: 1px solid #DDDDDD;
-  width: 80%;
+  width: 100%;
 }
 
 input[type=text]:focus,
@@ -47,6 +47,24 @@ fieldset {
 }
 button {
   width: 60%;
+  height: 3em;
+  border-radius: 2px;
+  background-color: yellow;
+  margin: 5px 1px 3px 0px;
+}
+
+button:hover {
+  background-color: #FFFFF0;
+}
+
+button:active {
+  background-color: yellow;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.formgroup {
+  display: block;
+  margin-bottom: 15px;
 }
 
 
