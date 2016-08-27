@@ -22,6 +22,9 @@ a {
 a:hover {
   color: #999;
 }
+a:visited {
+  color: #e0ffff;
+}
 
 /* Section Styles */
 

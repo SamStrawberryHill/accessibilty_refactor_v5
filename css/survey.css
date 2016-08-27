@@ -10,6 +10,46 @@ form {
   text-align: left;
   display: inline-block;
 }
+
+fieldset {
+  border: none;
+  text-align: left;
+  display: block;
+}
+legend {
+  display: none;
+}
+
+.container{
+  text-align: center;
+}
+.newsletter{
+  text-align: right;
+}
+
+.formgroup {
+  display: block;
+  margin-bottom: 15px;
+}
+label[for="song"],
+label[for="albums"] {
+    margin: 20px 0 15px;
+    display: inline-block;
+}
+
+input[type="radio"] {
+    margin: 0 10px;
+}
+
+input[type="radio"]:nth-of-type(1) {
+    margin-right: 10px;
+    margin-left: 0;
+}
+/* Text Area */
+textarea {
+    border: 3px solid transparent;
+    height: 5em;
+}
 input[type=text],
 input[type=email],
 textarea {
@@ -32,21 +72,9 @@ textarea:focus {
   margin: 5px 1px 3px 0px;
   border: 1px solid rgba(81, 203, 238, 1);
 }
-
-fieldset {
-  border: none;
-  text-align: left;
-  display: block;
-}
-
-.container{
-  text-align: center;
-}
-.newsletter{
-  text-align: right;
-}
+/*Submit Button */
 button {
-  width: 60%;
+  width: 40%;
   height: 3em;
   border-radius: 2px;
   background-color: yellow;
@@ -62,11 +90,6 @@ button:active {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-.formgroup {
-  display: block;
-  margin-bottom: 15px;
-}
-
 
 /* Styles for larger screens */
 @media screen and (min-width: 840px) {

@@ -27,37 +27,34 @@
       <h2>Survey</h2>
       <div class="card">
         <div class="flex">
-          <img class="photo" src= "img/concert01.jpg" alt="">
+          <img class="photo" src= "img/concert01.jpg" alt="photo of a crowd with hands in the air">
           <div class="container">
             <form class = "survey" role="form">
               <fieldset>
-                <legend>Who is your favorite band member:</legend>
+                <legend>Favorites</legend>
+                <p>Who is your favorite band member:</p>
                 <label for="John"><input type="radio" name="res" value="John" id="John">John</label>
                 <label for="Hazzard"><input type="radio" name="res" value="Hazzard" id="Hazzard">Hazzard</label>
                 <label for="Bob"><input type="radio" name="res" value="Bob" id="Bob">Bob</label>
                 <label for="Sally"><input type="radio" name="res" value="Sally" id="Sally">Sally</label>
-              </fieldset>
-              <fieldset>
-              <legend>What is your favorite album:</legend>
-              <select id="albums" name="select">
-                <label for="albums"><span styele="display:none">select an albums</span></label>
-                <option value="1">Party For An Angel</option>
+
+              <label for="albums" id= "favAlbums">What is your favorite album:</label><br />
+              <select aria-describedby="favAlbums" id="albums" name="select">
                 <option value="2">A Day Of Old</option>
-                <option value="3">Finding My Shadow</option>
                 <option value="4">Diamond Fireworks</option>
                 <option value="5">Enjoy Your Desire</option>
-                <option value="6">This Is For You</option>
-                <option value="7">Music Of My Life</option>
-                <option value="8">Song For Yesterday</option>
+                <option value="3">Finding My Shadow</option>
                 <option value="9">Heroic Forever</option>
                 <option value="10">Midnight Fires</option>
+                <option value="7">Music Of My Life</option>
+                <option value="1">Party For An Angel</option>
+                <option value="8">Song For Yesterday</option>
                 <option value="11">Street Of The Rider</option>
-              </select>
-            </fieldset>
-              <fieldset>
-              <legend>What is your favorite song:</legend>
-              <label for="textarea"><span style="display:none">Please type your favorite song</span></label>
-              <textarea id="textarea"></textarea>
+                <option value="6">This Is For You</option>
+              </select><br />
+
+              <label for="song" id="favSong">What is your favorite song:</label><br />
+              <textarea aria-describedby="favSong" id="song"></textarea>
               </fieldset>
             </form>
           </div>
@@ -66,24 +63,15 @@
       <h2>Newsletter</h2>
       <div class="card">
         <div class="flex">
-          <img class="photo" src= "img/the_band.jpg" alt="">
+          <img class="photo" src= "img/the_band.jpg" alt="photo of the drummer and guitarist">
             <div class="container">
               <form class="newsletter" role="form">
                 <fieldset>
-                  <legend><span style="display:none">Sign up for the newsletter</span></legend>
-                  <div class="formgroup">
-                    <label for="name">Name:<input id="name" type ="text" name="textfield">
-                      <span id="hint" style="display:none">Please type your first and last name</span></label>
-                  </div>
-                  <div class="formgroup">
-                    <label for="emailaddy">Email:<input id="emailaddy" type ="email" name="textfield">
-                      <span id="email" style="display:none">Please type in a valid email address</span></label>
-                  </div>
-                  <div class="formgroup">
-                    <label for="retypeemail">Retype Email:<input id="retypeemail" type ="email" name="textfield">
-                      <span id="confirmemail" style="display:none">Please retype your valid email address</span></label>
-                  </div>
-                  <button type="submit">Sign Up</button><span id="submit" style="display:none">Button submits form</span>
+                  <legend>Contact Info</legend>
+                    <label for="name">Name:<input id="name" type ="text" name="textfield"></label>
+                    <label for="emailaddy">Email:<input id="emailaddy" type ="email" name="textfield"></label>
+                    <label for="retypeemail">Retype Email:<input id="retypeemail" type ="email" name="textfield"></label>
+                  <button type="submit" aria-describedby="signup" id="signup">Sign Up</button>
                 </fieldset>
               </form>
             </div>
@@ -93,11 +81,11 @@
 
     <footer role="contentinfo">
       <ul>
-        <li><a href="img/img/twitter-32.png" class="social twitter">
+        <li><a href="#" class="social twitter">
           <img src= "img/twitter-32.png" width="32" height="32" alt="Twitter Icon Link"></a></li>
-        <li><a href="img/img/youtube-32.png" class="social youtube">
+        <li><a href="#" class="social youtube">
           <img src= "img/youtube-32.png" width="32" height="32" alt="Youtube Icon Link"></a></li>
-        <li><a href="img/spotify-32.png" class="social spotify">
+        <li><a href="#" class="social spotify">
           <img src= "img/spotify-32.png" width="32" height="32" alt="Spotify Icon Link"></a></li>
       </ul>
       <p class="copyright">Copyright 2015, Accessible Frog</p>
